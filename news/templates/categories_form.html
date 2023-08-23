@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title%}
+Formulário para Nova Categoria
+{% endblock %}
+
+{% block header_links %}
+<li>
+    <a href="/categories">Cadastrar Categorias</a>
+</li>
+{% endblock %}
+
+{% block content %}
+    <form class="categories-form" action="/categories" method="post">
+        {% csrf_token %}
+        <div>
+            {{form.as_p}}
+            <button type="submit">
+                Salvar
+            </button>
+        </div>
+    </form>
+{% endblock %}

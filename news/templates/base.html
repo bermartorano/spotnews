@@ -9,13 +9,15 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-    {% block header %}
     <header class="header">
         <ul class="header-links">
-            <a href="/">Home</a>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            {% block header_links %}
+            {% endblock %}
         </ul>
     </header>
-    {% endblock %}
 
     {% block content %}{% endblock %}
 </body>

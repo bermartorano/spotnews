@@ -6,11 +6,13 @@ Página de Detalhes da Notícia
 {% endblock %}
 
 {% block content %}
-<div class="news-card">
+<div class="news-detail">
     <h1 class="news-title">{{news.title}}</h1>
     <p class="news-content">{{news.content}}</p>
     {% for category in news.categories.all %}
-        <span class="news-categories">{{ category }}</span>
+        <span class="news-categories">
+            <p>{{ category }}</p>
+        </span>
     {% endfor %}
     <span class="news-author">{{news.author}}</span>
     <img src="{% static news.image.url %}" alt="news-card">
