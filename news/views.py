@@ -32,7 +32,6 @@ def register_category(request):
 def register_news(request):
     if request.method == "POST":
         form = CreateNewsModelForm(request.POST, request.FILES)
-        print('********', request.FILES)
 
         if form.is_valid():
             form_to_create = {**form.cleaned_data}
