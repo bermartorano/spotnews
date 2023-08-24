@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from ...news.models.category_model import Categories
+from news.models.category_model import Categories
 from ..serializers.categories_serializer import CategoriesSerializer
 
 
