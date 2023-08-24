@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block title%}
-Formulário para Nova Categoria
+Formulário para Nova Notícia
 {% endblock %}
 
 {% block header_links %}
@@ -14,7 +14,7 @@ Formulário para Nova Categoria
 {% endblock %}
 
 {% block content %}
-    <form class="categories-form" action="/categories" method="post" enctype="multipart/form-data">
+    <form class="news-form" action="/news" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <div>
             {{form.as_p}}

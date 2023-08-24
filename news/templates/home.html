@@ -11,7 +11,9 @@ Página Inicial
     <div class="news-card">
         <h2 class="news-title">{{ new.title }}</h2>
         <span class="news-date">{{ new.created_at|date:"SHORT_DATE_FORMAT" }}</span>
-        <img src="{% static new.image.url %}" alt="news-card">
+        {% if new.image %}
+            <img src="{% static new.image.url %}" alt="news-card">
+        {% endif %}
     </div>
     {% endfor %}
 </div>
