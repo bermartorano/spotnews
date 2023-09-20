@@ -22,3 +22,4 @@ Aplicação feita de acordo com a arquitetura MTV (model, template, view). Com e
 8. Suba a aplicação usando `python3 manage.py runserver`.
 
 ## Detalhes do Desenvolvimento
+![requisitos](https://github.com/bermartorano/spotnews/assets/110858573/d3e1524e-1652-4666-ba34-cccd875a09f0)
