@@ -1,6 +1,6 @@
 # 🗞️ Spotnews
 
-Aplicação feita de acordo com a arquitetura MTV (model, template, view). Com ela, é possíveil realizar operações CRUD em um banco de dados que modela notícias, autores e categorias. Páginas de formulários para o registro de novas notícias, categorias e usuários também foram desenvolvidas.
+Aplicação feita de acordo com a arquitetura MTV (model, template, view). Com ela, é possível realizar operações CRUD em um banco de dados que modela notícias, autores e categorias. Páginas de formulários para o registro de novas notícias, categorias e usuários também foram desenvolvidas.
 
 ## Ferramentas Utilizadas
 * Python
